@@ -3,6 +3,10 @@ console.log("JS OK");
 
 /* DOM ELEMENT */
 
+const rowElement = document.getElementById('card-wrapper');
+
+
+// ARRAY OBJ TEAM
 
 const ourTeam = [
 {
@@ -16,34 +20,52 @@ const ourTeam = [
     name : 'Angela',
     lastName : 'Caroll',
     role : 'Chied Editor',
-    imageLink : 'angela-caroll-chief-editor.jpg' 
+    imageLink : 'img/angela-caroll-chief-editor.jpg' 
 },
 {
     name : 'Walter',
     lastName : 'Gordon',
     role : 'Office Manager',
-    imageLink : 'walter-gordon-office-manager.jpg' 
+    imageLink : 'img/walter-gordon-office-manager.jpg' 
 },
 {
     name : 'Angela',
     lastName : 'Lopez',
     role : 'Social Media Manager',
-    imageLink : 'angela-lopez-social-media-manager.jpg' 
+    imageLink : 'img/angela-lopez-social-media-manager.jpg' 
 },
 {
     name : 'Scott',
     lastName : 'Estrada',
     role : 'Developer',
-    imageLink : 'scott-estrada-developer.jpg' 
+    imageLink : 'img/scott-estrada-developer.jpg' 
 },
 {
     name : 'Barbara',
     lastName : 'Ramos',
     role : 'Graphic Designer',
-    imageLink : 'barbara-ramos-graphic-designer.jpg' 
+    imageLink : 'img/barbara-ramos-graphic-designer.jpg' 
 },
-
-
 ]
+
 // CHECK
 console.log(ourTeam[4].imageLink);
+
+
+// VARIABILE D'APPOGGIO
+let myList = "";
+
+// CICLO FINCHE'
+let i = 0;
+while (i < ourTeam.length){
+    console.table(ourTeam[i]);
+
+    myList += `
+    <div class="col-4">
+    <img class="img-fluid mb-3" src="${ourTeam.imageLink}" alt="">
+
+    </div>`;
+    i++;
+}
+
+rowElement.innerHTML = myList;
