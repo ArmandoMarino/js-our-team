@@ -65,7 +65,7 @@ while (i < ourTeam.length){
     <div class="bg pb-2">
     <img class="img-fluid mb-3" src="${ourTeam[i].imageLink}" alt="">
     <h5>${ourTeam[i].name} ${ourTeam[i].lastName}</h5>
-    <p>Founder & CEO</p>
+    <p>${ourTeam[i].role}</p>
     </div>
     </div>`;
     i++;
