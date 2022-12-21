@@ -62,7 +62,7 @@ while (i < ourTeam.length){
 
     myList += `
     <div class="col-4">
-    <img class="img-fluid mb-3" src="${ourTeam.imageLink}" alt="">
+    <img class="img-fluid mb-3" src="${ourTeam[i].imageLink}" alt="">
 
     </div>`;
     i++;
