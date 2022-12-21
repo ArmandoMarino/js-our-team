@@ -61,7 +61,7 @@ while (i < ourTeam.length){
     console.table(ourTeam[i]);
 
     myList += `
-    <div class="col-4 my-2">
+    <div class="col-4 my-4">
     <div class="bg pb-2">
     <img class="img-fluid mb-3" src="${ourTeam[i].imageLink}" alt="">
     <h5>${ourTeam[i].name} ${ourTeam[i].lastName}</h5>
